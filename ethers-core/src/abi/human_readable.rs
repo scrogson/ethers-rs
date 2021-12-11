@@ -57,6 +57,7 @@ impl AbiParser {
             events: BTreeMap::new(),
             receive: false,
             fallback: false,
+            errors: BTreeMap::new(),
         };
 
         let (structs, types): (Vec<_>, Vec<_>) = input
